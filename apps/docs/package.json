@@ -1,8 +1,8 @@
 {
   "name": "@polyfunc/docs",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "private": true,
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@storybook/addon-actions": "^6.5.13",
