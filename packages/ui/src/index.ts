@@ -1,1 +1,4 @@
-export * from './components/my-element'
+import { Button } from './components/button';
+
+// define elems
+customElements.define('pf-button', Button);

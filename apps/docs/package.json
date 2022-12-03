@@ -1,5 +1,5 @@
 {
-  "name": "storybook",
+  "name": "@polyfunc/docs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -13,7 +13,9 @@
     "babel-loader": "^8.3.0",
     "lit-html": "^2.4.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@polyfunc/ui": "*"
+  },
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook --docs"
