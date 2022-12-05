@@ -1,4 +1,5 @@
 import { html } from 'lit-html';
+import '@polyfunc/ui'
 
 export default {
   title: 'Button',
