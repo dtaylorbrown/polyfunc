@@ -9,8 +9,10 @@
     "dev": "vite",
     "build": "tsc && vite build"
   },
+  "dependencies": {
+    "lit": "^2.4.0"
+  },
   "devDependencies": {
-    "lit": "^2.4.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   },
