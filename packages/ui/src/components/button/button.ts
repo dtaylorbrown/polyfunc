@@ -1,24 +1,27 @@
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html, css, property } from 'lit-element';
 
 export class Button extends LitElement {
-  render() {
-    return html`<button type="button">Click Me!</button>`;
+  static styles = css`
+    :host {
+      display: inline-block;
+    }
+    button {
+      border: 2px solid black;
+      background-color: lightgray;
+      padding: 8px;
+      color: black;
+      font-weight: 700;
+    }
+  `;
+
+  @property({ attribute: "label", type: String })
+  label = 'pf-default';
+
+  clickEvent() {
+    console.log('helloooo')
   }
 
-  static getStyles() {
-    return css`
-      button {
-        background-color: #4caf50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-    `;
+  protected render() {
+    return html`<button type="button" @click=${this.clickEvent}>${this.label}</button>`;
   }
 }

@@ -7,5 +7,5 @@ export default {
 
 export const Primary = () =>
   html`
-    <pf-button />
+    <pf-button label="click me" />
   `;
